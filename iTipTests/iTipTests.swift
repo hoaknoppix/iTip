@@ -8,28 +8,34 @@
 
 import UIKit
 import XCTest
+import iTip
 
 class iTipTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
+    //Have tried, but I don't know it cannot reach Util class :(
+    /*
+    func testGetTotalValue(){
+        let orderCost = 1000.00;
+        let tipPercentage = 10;
+        let total = Util.getTotalCost(orderCost, tipPercentage)
+        XCTAssertEqual(1100.00, Util.getTotalCost(orderCost, tipPercentage), "The caculation is not correct.")
+    }
+    */
+    
     func testExample() {
-        // This is an example of a functional test case.
         XCTAssert(true, "Pass")
     }
     
     func testPerformanceExample() {
-        // This is an example of a performance test case.
         self.measureBlock() {
-            // Put the code you want to measure the time of here.
         }
     }
     
