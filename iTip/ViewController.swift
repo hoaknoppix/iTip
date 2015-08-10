@@ -22,31 +22,33 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadTipPercentage()
         //automatically show the keypad
         textBoxOrderCost.becomeFirstResponder()
-
-        loadTipPercentage()
     }
+    
 
     override func viewWillDisappear(animated: Bool) {
-
+        saveTipPercentage()
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    //don't know why it didn't work
     func loadTipPercentage(){
         var defaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
-        var defaultTipObject = defaults.objectForKey("tip")
         tipPercentage = defaults.floatForKey("tip_percentage")
-        print(tipPercentage)
-        textBoxTipPercentage.text = tipPercentage.description
+                print("\(tipPercentage)")
+        if tipPercentage == 0 {
+            tipPercentage = 5.0
+        }
+        textBoxTipPercentage.text = "\(tipPercentage)"
     }
 
     func saveTipPercentage(){
         var defaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
-        defaults.setObject("Tip", forKey: "tip")
+        tipPercentage  = (textBoxTipPercentage.text as NSString).floatValue
         defaults.setFloat(tipPercentage, forKey: "tip_percentage")
         defaults.synchronize()
     }
