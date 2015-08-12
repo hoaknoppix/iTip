@@ -27,8 +27,7 @@ class ViewController: UIViewController {
         textBoxOrderCost.becomeFirstResponder()
     }
     
-
-    override func viewWillDisappear(animated: Bool) {
+    @IBAction func didFinishEditingTipPercentage(sender: AnyObject) {
         saveTipPercentage()
     }
     

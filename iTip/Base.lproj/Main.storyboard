@@ -46,6 +46,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
                                 <connections>
+                                    <action selector="didFinishEditingTipPercentage:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="m4r-PK-3Uj"/>
                                     <action selector="editingChangeAction:" destination="BYZ-38-t0r" eventType="editingChanged" id="N54-Ap-Ygr"/>
                                 </connections>
                             </textField>
