@@ -159,6 +159,8 @@
 		FF8EDB561B75A9D8007CA513 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0730;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = hoaqt;
 				TargetAttributes = {
@@ -415,6 +417,7 @@
 				FF8EDB7F1B75A9D8007CA513 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF8EDB801B75A9D8007CA513 /* Build configuration list for PBXNativeTarget "iTipTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +426,7 @@
 				FF8EDB821B75A9D8007CA513 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
