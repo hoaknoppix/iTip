@@ -1,0 +1,12 @@
+PODS:
+  - CircleSlider (0.2.0)
+
+DEPENDENCIES:
+  - CircleSlider
+
+SPEC CHECKSUMS:
+  CircleSlider: 66e5bf0059f5feffc954e5666f5286f4a331ebe3
+
+PODFILE CHECKSUM: fa7dedbbcae7aee97c25e83882309bb0a8208897
+
+COCOAPODS: 1.0.0

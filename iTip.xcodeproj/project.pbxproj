@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1ACA88B5756DC7759BE30C6B /* Pods_iTipTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A74D5FA64E070284974EE1 /* Pods_iTipTests.framework */; };
+		D91CF81AD7D97DCBF262DBAE /* Pods_iTip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E498C714D757E55B7ECAD6C7 /* Pods_iTip.framework */; };
+		FF371A481CED4A9A0054F2FC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF371A471CED4A9A0054F2FC /* SettingsViewController.swift */; };
 		FF8EDB641B75A9D8007CA513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8EDB631B75A9D8007CA513 /* AppDelegate.swift */; };
 		FF8EDB661B75A9D8007CA513 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8EDB651B75A9D8007CA513 /* ViewController.swift */; };
 		FF8EDB691B75A9D8007CA513 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF8EDB671B75A9D8007CA513 /* Main.storyboard */; };
 		FF8EDB6B1B75A9D8007CA513 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF8EDB6A1B75A9D8007CA513 /* Images.xcassets */; };
 		FF8EDB6E1B75A9D8007CA513 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF8EDB6C1B75A9D8007CA513 /* LaunchScreen.xib */; };
 		FF8EDB7A1B75A9D8007CA513 /* iTipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8EDB791B75A9D8007CA513 /* iTipTests.swift */; };
-		FF8EDC101B75D189007CA513 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8EDC0F1B75D189007CA513 /* Util.swift */; };
+		FF8EDC101B75D189007CA513 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8EDC0F1B75D189007CA513 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		088AC319E7CEF354A2821980 /* Pods-iTip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTip.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTip/Pods-iTip.release.xcconfig"; sourceTree = "<group>"; };
+		3170228114925AADDF6F0BB9 /* Pods-iTip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTip/Pods-iTip.debug.xcconfig"; sourceTree = "<group>"; };
+		3D4422619289856B4DD47E3F /* Pods-iTipTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTipTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTipTests/Pods-iTipTests.release.xcconfig"; sourceTree = "<group>"; };
+		53A74D5FA64E070284974EE1 /* Pods_iTipTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTipTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9D622E6ED0B2E74F099654C /* Pods-iTipTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTipTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTipTests/Pods-iTipTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E498C714D757E55B7ECAD6C7 /* Pods_iTip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF371A471CED4A9A0054F2FC /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ViewControllers/SettingsViewController.swift; sourceTree = "<group>"; };
 		FF8EDB5E1B75A9D8007CA513 /* iTip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF8EDB621B75A9D8007CA513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF8EDB631B75A9D8007CA513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +47,7 @@
 		FF8EDB731B75A9D8007CA513 /* iTipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF8EDB781B75A9D8007CA513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF8EDB791B75A9D8007CA513 /* iTipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTipTests.swift; sourceTree = "<group>"; };
-		FF8EDC0F1B75D189007CA513 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		FF8EDC0F1B75D189007CA513 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D91CF81AD7D97DCBF262DBAE /* Pods_iTip.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +63,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ACA88B5756DC7759BE30C6B /* Pods_iTipTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E815D5887D328AF1AED7F7B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3170228114925AADDF6F0BB9 /* Pods-iTip.debug.xcconfig */,
+				088AC319E7CEF354A2821980 /* Pods-iTip.release.xcconfig */,
+				D9D622E6ED0B2E74F099654C /* Pods-iTipTests.debug.xcconfig */,
+				3D4422619289856B4DD47E3F /* Pods-iTipTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA5EC4148A6BB614CBED881B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E498C714D757E55B7ECAD6C7 /* Pods_iTip.framework */,
+				53A74D5FA64E070284974EE1 /* Pods_iTipTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF371A491CED4AA40054F2FC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FF8EDB651B75A9D8007CA513 /* ViewController.swift */,
+				FF371A471CED4A9A0054F2FC /* SettingsViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		FF8EDB551B75A9D8007CA513 = {
 			isa = PBXGroup;
 			children = (
 				FF8EDB601B75A9D8007CA513 /* iTip */,
 				FF8EDB761B75A9D8007CA513 /* iTipTests */,
 				FF8EDB5F1B75A9D8007CA513 /* Products */,
+				E815D5887D328AF1AED7F7B5 /* Pods */,
+				FA5EC4148A6BB614CBED881B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,13 +122,13 @@
 		FF8EDB601B75A9D8007CA513 /* iTip */ = {
 			isa = PBXGroup;
 			children = (
+				FF371A491CED4AA40054F2FC /* ViewControllers */,
 				FF8EDB631B75A9D8007CA513 /* AppDelegate.swift */,
-				FF8EDB651B75A9D8007CA513 /* ViewController.swift */,
 				FF8EDB671B75A9D8007CA513 /* Main.storyboard */,
 				FF8EDB6A1B75A9D8007CA513 /* Images.xcassets */,
 				FF8EDB6C1B75A9D8007CA513 /* LaunchScreen.xib */,
 				FF8EDB611B75A9D8007CA513 /* Supporting Files */,
-				FF8EDC0F1B75D189007CA513 /* Util.swift */,
+				FF8EDC0F1B75D189007CA513 /* Utils.swift */,
 			);
 			path = iTip;
 			sourceTree = "<group>";
@@ -122,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF8EDB7D1B75A9D8007CA513 /* Build configuration list for PBXNativeTarget "iTip" */;
 			buildPhases = (
+				D0485B16C11A933250359CA8 /* 📦 Check Pods Manifest.lock */,
 				FF8EDB5A1B75A9D8007CA513 /* Sources */,
 				FF8EDB5B1B75A9D8007CA513 /* Frameworks */,
 				FF8EDB5C1B75A9D8007CA513 /* Resources */,
+				111EC9794B5166A89154520C /* 📦 Embed Pods Frameworks */,
+				69ED0A6568119BA349716EA5 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,9 +185,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF8EDB801B75A9D8007CA513 /* Build configuration list for PBXNativeTarget "iTipTests" */;
 			buildPhases = (
+				47AC4657BD5A27AAB140DB04 /* 📦 Check Pods Manifest.lock */,
 				FF8EDB6F1B75A9D8007CA513 /* Sources */,
 				FF8EDB701B75A9D8007CA513 /* Frameworks */,
 				FF8EDB711B75A9D8007CA513 /* Resources */,
+				2178D9F4649E3274CF0E0A9E /* 📦 Embed Pods Frameworks */,
+				181E08996310B20D9F1EE1AF /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,14 +261,108 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		111EC9794B5166A89154520C /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iTip/Pods-iTip-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		181E08996310B20D9F1EE1AF /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iTipTests/Pods-iTipTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2178D9F4649E3274CF0E0A9E /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iTipTests/Pods-iTipTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47AC4657BD5A27AAB140DB04 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		69ED0A6568119BA349716EA5 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iTip/Pods-iTip-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0485B16C11A933250359CA8 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FF8EDB5A1B75A9D8007CA513 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FF8EDB661B75A9D8007CA513 /* ViewController.swift in Sources */,
-				FF8EDC101B75D189007CA513 /* Util.swift in Sources */,
+				FF8EDC101B75D189007CA513 /* Utils.swift in Sources */,
 				FF8EDB641B75A9D8007CA513 /* AppDelegate.swift in Sources */,
+				FF371A481CED4A9A0054F2FC /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +489,7 @@
 		};
 		FF8EDB7E1B75A9D8007CA513 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3170228114925AADDF6F0BB9 /* Pods-iTip.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iTip/Info.plist;
@@ -356,6 +500,7 @@
 		};
 		FF8EDB7F1B75A9D8007CA513 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 088AC319E7CEF354A2821980 /* Pods-iTip.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iTip/Info.plist;
@@ -366,6 +511,7 @@
 		};
 		FF8EDB811B75A9D8007CA513 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9D622E6ED0B2E74F099654C /* Pods-iTipTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -385,6 +531,7 @@
 		};
 		FF8EDB821B75A9D8007CA513 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D4422619289856B4DD47E3F /* Pods-iTipTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
