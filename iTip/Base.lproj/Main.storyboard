@@ -29,45 +29,52 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0yc-ft-bah">
-                                <rect key="frame" x="0.0" y="194" width="600" height="120"/>
+                                <rect key="frame" x="0.0" y="194" width="600" height="150"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Oc-pp-hSL">
+                                        <rect key="frame" x="568" y="10" width="24" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.91008673591688249" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip Percentage:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVN-9W-yQP">
+                                        <rect key="frame" x="442" y="10" width="121" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="bYw-8S-9pW">
-                                        <rect key="frame" x="8" y="6" width="584" height="30"/>
+                                        <rect key="frame" x="8" y="39" width="584" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" keyboardAppearance="alert"/>
                                         <connections>
                                             <action selector="editingChangeAction:" destination="BYZ-38-t0r" eventType="editingChanged" id="oIJ-tP-hD9"/>
                                         </connections>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgm-dc-43m">
-                                        <rect key="frame" x="273" y="82" width="54" height="30"/>
-                                        <state key="normal" title="Camera"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgm-dc-43m">
+                                        <rect key="frame" x="275" y="82" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="Fjf-cv-c6c"/>
+                                            <constraint firstAttribute="height" constant="50" id="Nlr-gl-hPW"/>
+                                        </constraints>
+                                        <state key="normal" image="fsettingsAll"/>
+                                        <connections>
+                                            <action selector="takePicture:" destination="BYZ-38-t0r" eventType="touchDown" id="Iqh-jL-hci"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Oc-pp-hSL">
-                                        <rect key="frame" x="568" y="49" width="24" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="1" green="0.91008673591688249" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip Percentage:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVN-9W-yQP">
-                                        <rect key="frame" x="442" y="49" width="121" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="9Oc-pp-hSL" firstAttribute="top" secondItem="bYw-8S-9pW" secondAttribute="bottom" constant="13" id="3Ri-2r-Ytu"/>
-                                    <constraint firstItem="bYw-8S-9pW" firstAttribute="top" secondItem="0yc-ft-bah" secondAttribute="top" constant="6" id="EN4-Z9-vh5"/>
+                                    <constraint firstItem="9Oc-pp-hSL" firstAttribute="top" secondItem="bYw-8S-9pW" secondAttribute="bottom" constant="-59" id="3Ri-2r-Ytu"/>
+                                    <constraint firstItem="bYw-8S-9pW" firstAttribute="top" secondItem="0yc-ft-bah" secondAttribute="top" constant="39" id="EN4-Z9-vh5"/>
                                     <constraint firstItem="9Oc-pp-hSL" firstAttribute="leading" secondItem="dVN-9W-yQP" secondAttribute="trailing" constant="5" id="Fng-Dz-NrP"/>
                                     <constraint firstItem="bYw-8S-9pW" firstAttribute="trailing" secondItem="0yc-ft-bah" secondAttribute="trailingMargin" id="GvC-og-Rrb"/>
-                                    <constraint firstItem="Bgm-dc-43m" firstAttribute="top" secondItem="bYw-8S-9pW" secondAttribute="bottom" constant="46" id="Kt1-AO-rNX"/>
+                                    <constraint firstItem="Bgm-dc-43m" firstAttribute="top" secondItem="bYw-8S-9pW" secondAttribute="bottom" constant="13" id="Kt1-AO-rNX"/>
                                     <constraint firstAttribute="trailing" secondItem="9Oc-pp-hSL" secondAttribute="trailing" constant="8" id="TXc-0d-0V5"/>
                                     <constraint firstItem="bYw-8S-9pW" firstAttribute="leading" secondItem="0yc-ft-bah" secondAttribute="leadingMargin" id="eYG-Xd-BIW"/>
-                                    <constraint firstItem="dVN-9W-yQP" firstAttribute="top" secondItem="bYw-8S-9pW" secondAttribute="bottom" constant="13" id="ezd-9f-geF"/>
+                                    <constraint firstItem="dVN-9W-yQP" firstAttribute="top" secondItem="bYw-8S-9pW" secondAttribute="bottom" constant="-59" id="ezd-9f-geF"/>
                                     <constraint firstItem="bYw-8S-9pW" firstAttribute="centerX" secondItem="Bgm-dc-43m" secondAttribute="centerX" id="orw-oV-pXd"/>
-                                    <constraint firstAttribute="height" constant="120" id="rFF-na-D4F"/>
+                                    <constraint firstAttribute="height" constant="150" id="rFF-na-D4F"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -103,6 +110,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="buttonCamera" destination="Bgm-dc-43m" id="GeW-nH-1b5"/>
                         <outlet property="labelTipPercentage" destination="9Oc-pp-hSL" id="GRO-1U-ZC9"/>
                         <outlet property="labelTotal" destination="A14-dR-BAH" id="Pcf-Bh-Xow"/>
                         <outlet property="textBoxOrderCost" destination="bYw-8S-9pW" id="Ef7-Wd-rog"/>
@@ -112,7 +120,7 @@
             </objects>
             <point key="canvasLocation" x="1746" y="241"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--Settings-->
         <scene sceneID="AUt-J9-TCP">
             <objects>
                 <viewController id="7H4-pc-ksX" customClass="SettingsViewController" customModule="iTip" customModuleProvider="target" sceneMemberID="viewController">
@@ -135,7 +143,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip Percentage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xjj-LD-vSX">
                                 <rect key="frame" x="242" y="180" width="116" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -147,6 +155,7 @@
                             <constraint firstItem="rqn-wz-2kL" firstAttribute="top" secondItem="Xjj-LD-vSX" secondAttribute="bottom" constant="24" id="yZW-3b-wvC"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Settings" id="Wrl-1z-0e8"/>
                     <connections>
                         <outlet property="sliderArea" destination="rqn-wz-2kL" id="hz1-a5-4fo"/>
                     </connections>
@@ -174,4 +183,7 @@
             <point key="canvasLocation" x="934" y="241"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="fsettingsAll" width="252" height="253"/>
+    </resources>
 </document>

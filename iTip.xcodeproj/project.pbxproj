@@ -48,6 +48,7 @@
 		FF8EDB781B75A9D8007CA513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF8EDB791B75A9D8007CA513 /* iTipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTipTests.swift; sourceTree = "<group>"; };
 		FF8EDC0F1B75D189007CA513 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		FFC330391CF6811F00FE4332 /* iTip-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iTip-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +130,7 @@
 				FF8EDB6C1B75A9D8007CA513 /* LaunchScreen.xib */,
 				FF8EDB611B75A9D8007CA513 /* Supporting Files */,
 				FF8EDC0F1B75D189007CA513 /* Utils.swift */,
+				FFC330391CF6811F00FE4332 /* iTip-Bridging-Header.h */,
 			);
 			path = iTip;
 			sourceTree = "<group>";
@@ -492,9 +494,12 @@
 			baseConfigurationReference = 3170228114925AADDF6F0BB9 /* Pods-iTip.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = iTip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iTip/iTip-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -503,9 +508,11 @@
 			baseConfigurationReference = 088AC319E7CEF354A2821980 /* Pods-iTip.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = iTip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iTip/iTip-Bridging-Header.h";
 			};
 			name = Release;
 		};

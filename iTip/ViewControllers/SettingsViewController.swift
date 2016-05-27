@@ -42,7 +42,7 @@ class SettingsViewController: UIViewController {
             .BarWidth(20),
             .StartAngle(-45),
             .MaxValue(Float(MAX_TIP_VALUE)),
-            .MinValue(Float(MIN_TIP_VALUE))
+            .MinValue(Float(MIN_TIP_VALUE)),
         ]
         self.circleSlider = CircleSlider(frame: self.sliderArea.bounds, options: options)
         self.circleSlider?.addTarget(self, action: #selector(SettingsViewController.valueChange(_:)), forControlEvents: .ValueChanged)
@@ -56,23 +56,9 @@ class SettingsViewController: UIViewController {
     }
     
     func valueChange(sender: CircleSlider) {
-        guard isCircleSliderLoaded else {
-            return
-        }
         let value:Int = Int(sender.value)
         self.valueLabel.text = "\(value)" + "%"
         Utils.saveTipPercentage(value)
-        
-        switch (value / THRESHOLD_TIP_VALUE) {
-        case 0:
-            self.circleSlider.changeOptions([.TrackingColor(UIColor(red: 78/255, green: 136/255, blue: 185/255, alpha: 1))])
-            break
-        case 1:
-            self.circleSlider.changeOptions([.TrackingColor(UIColor(red: 150/255, green: 50/255, blue: 120/255, alpha: 1))])
-            break
-        default:
-            break
-        }
     }
     
 

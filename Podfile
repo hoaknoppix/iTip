@@ -5,6 +5,8 @@ target 'iTip' do
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
   pod "CircleSlider"
+  pod 'TesseractOCRiOS', '4.0.0'
+  pod 'Toast-Swift', '~> 1.3.0'
 
   # Pods for iTip
 

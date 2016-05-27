@@ -7,12 +7,21 @@
 //
 
 import Foundation
-
+import TesseractOCR
 
 class Utils{
     
-    static let _100_PERCENT:Int = 100;
-    static var tipPercentage:Int? = nil;
+    static let _100_PERCENT:Int = 100
+    static var tipPercentage:Int? = nil
+    static var tesseract:G8Tesseract = G8Tesseract(language: "eng")
+    
+    static func getOrderCostFromImage(image: UIImage) -> String {
+        tesseract.charWhitelist = "1234567890"
+        tesseract.image = image
+        tesseract.recognize()
+        print(tesseract.recognizedText)
+        return tesseract.recognizedText
+    }
     
     /// this method returns the total cost the user need to pay
     /// param: orderCost - the order cost

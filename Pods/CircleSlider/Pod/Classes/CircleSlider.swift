@@ -88,13 +88,18 @@ public class CircleSlider: UIControl {
   }
   
   override public func layoutSublayersOfLayer(layer: CALayer) {
-    if self.trackLayer == nil {
-      self.trackLayer = TrackLayer(bounds: self.bounds, setting: self.createLayerSetting())
-    }
-    if self.thumbView == nil {
-      self.thumbView = UIView(frame: CGRect(x: 0, y: 0, width: self.thumbWidth, height: self.thumbWidth))
-    }
+    initSubLayers()
   }
+
+    private func initSubLayers() {
+        if self.trackLayer == nil {
+            self.trackLayer = TrackLayer(bounds: self.bounds, setting: self.createLayerSetting())
+        }
+        if self.thumbView == nil {
+            self.thumbView = UIView(frame: CGRect(x: 0, y: 0, width: self.thumbWidth, height: self.thumbWidth))
+        }
+
+    }
 
   override public func hitTest(point: CGPoint, withEvent event: UIEvent?) -> UIView? {
     let rect = self.trackLayer.hollowRect
@@ -154,10 +159,14 @@ public class CircleSlider: UIControl {
       }
     }
     // Adjust because value not rise up to the maxValue
-    self.maxValue++
+    // comment to avoid increasing maxValue (hoaqt)
+    // self.maxValue++
   }
   
   private func layout(degree: Double) {
+    if (self.trackLayer == nil && self.thumbView == nil) {
+        initSubLayers()
+    }
     if let trackLayer = self.trackLayer, thumbView = self.thumbView {
       trackLayer.degree = degree
       thumbView.center = self.thumbCenter(degree)
