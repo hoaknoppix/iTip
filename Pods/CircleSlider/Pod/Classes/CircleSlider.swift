@@ -19,6 +19,15 @@ public enum CircleSliderOption {
 }
 
 public class CircleSlider: UIControl {
+    private var _valueLabel: UILabel?
+    public var valueLabel: UILabel? {
+        get {
+            return self._valueLabel
+        }
+        set {
+            self._valueLabel = newValue
+        }
+    }
   private var latestDegree: Double = 0
   private var _value: Float = 0
   public var value: Float {
@@ -37,6 +46,12 @@ public class CircleSlider: UIControl {
       self.layer.addSublayer(self.trackLayer)
     }
   }
+    public override func addSubview(view: UIView) {
+        super.addSubview(view)
+        if (view is UILabel) {
+            self._valueLabel = view as! UILabel
+        }
+    }
   private var thumbView: UIView! {
     didSet {
       if self.sliderEnabled {
@@ -81,6 +96,7 @@ public class CircleSlider: UIControl {
     if let options = options {
       self.build(options)
     }
+    self._valueLabel = nil
   }
 
   required public init?(coder aDecoder: NSCoder) {

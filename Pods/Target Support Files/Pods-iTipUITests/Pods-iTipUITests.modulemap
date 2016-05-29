@@ -1,0 +1,6 @@
+framework module Pods_iTipUITests {
+  umbrella header "Pods-iTipUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

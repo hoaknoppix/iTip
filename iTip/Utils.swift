@@ -11,7 +11,15 @@ import TesseractOCR
 
 class Utils{
     
-    static let _100_PERCENT:Int = 100
+    struct UtilsConstants {
+        static let _100_PERCENT:Int = 100
+        static let DEFAULT_LOCALE = "en_US"
+    }
+    
+    private init() {
+    
+    }
+    
     static var tipPercentage:Int? = nil
     static var tesseract:G8Tesseract = G8Tesseract(language: "eng")
     
@@ -19,7 +27,6 @@ class Utils{
         tesseract.charWhitelist = "1234567890"
         tesseract.image = image
         tesseract.recognize()
-        print(tesseract.recognizedText)
         return tesseract.recognizedText
     }
     
@@ -27,9 +34,9 @@ class Utils{
     /// param: orderCost - the order cost
     /// param: tipPercentage - the percent of the order cost for tipping
     /// return: the total cost for paying
-    static func getTotalCost(orderCost: Float, tipPercentage: Int) -> Float {
-        let totalPercentage = tipPercentage + _100_PERCENT
-        return orderCost * Float(totalPercentage) / Float(_100_PERCENT)
+    static func getTotalCost(orderCost: Double, tipPercentage: Int) -> Double {
+        let totalPercentage = tipPercentage + UtilsConstants._100_PERCENT
+        return orderCost * Double(totalPercentage) / Double(UtilsConstants._100_PERCENT)
     }
     
     
@@ -52,6 +59,7 @@ class Utils{
         defaults.synchronize()
         self.tipPercentage = tipPercentage
     }
-
+    
+  
     
 }

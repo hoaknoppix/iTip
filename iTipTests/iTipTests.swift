@@ -6,9 +6,7 @@
 //  Copyright (c) 2015 hoaqt. All rights reserved.
 //
 
-import UIKit
 import XCTest
-import iTip
 
 class iTipTests: XCTestCase {
     
@@ -20,23 +18,34 @@ class iTipTests: XCTestCase {
         super.tearDown()
     }
     
-    //Have tried, but I don't know it cannot reach Util class :(
-    /*
     func testGetTotalValue(){
-        let orderCost = 1000.00;
-        let tipPercentage = 10;
-        let total = Util.getTotalCost(orderCost, tipPercentage)
-        XCTAssertEqual(1100.00, Util.getTotalCost(orderCost, tipPercentage), "The caculation is not correct.")
-    }
-    */
-    
-    func testExample() {
-        XCTAssert(true, "Pass")
+        let orderCost = 1000.00
+        let tipPercentage = 10
+        XCTAssertEqual(1100.00, Utils.getTotalCost(orderCost, tipPercentage: tipPercentage), "The caculation is not correct.")
     }
     
-    func testPerformanceExample() {
-        self.measureBlock() {
+    func testSetAndGetTipPercentageFromNSDefault() {
+        let tipPercentage = 20
+        Utils.saveTipPercentage(tipPercentage)
+        XCTAssertEqual(tipPercentage,Utils.retrieveTipPercentage(), "Cannot set and get tip percentage from NSDefault")
+    }
+ 
+    func testMainViewCalculatingTotalAmount() {
+        if #available(iOS 9.0, *) {
+            let app = XCUIApplication()
+            let orderCost = 10000
+            let textBoxOrderCost = app.textFields["textBoxOrderCost"]
+            textBoxOrderCost.tap()
+            textBoxOrderCost.typeText(String(orderCost))
+            XCTAssertEqual(textBoxOrderCost.label, String(orderCost), "Wrong input for textBoxOrderCost")
+            let stringCurrentTipPercentage = app.staticTexts["labelTipPercentage"].label
+            let currentTipPercentage = Int(stringCurrentTipPercentage.substringToIndex(stringCurrentTipPercentage.characters.endIndex))
+            let totalCost = app.staticTexts["labelTotalCost"].label
+                    XCTAssertEqual(totalCost, String(Utils.getTotalCost(Double(orderCost), tipPercentage: currentTipPercentage!)), "Wrong total cost")
+        } else {
+            // Fallback on earlier versions
         }
+        
     }
     
 }

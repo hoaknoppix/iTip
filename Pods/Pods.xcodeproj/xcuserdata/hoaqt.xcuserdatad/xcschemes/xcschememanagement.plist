@@ -14,7 +14,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-iTipIntTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-iTipTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-iTipUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -52,7 +62,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>720737DEC98AA9E39B2B572C79BF6FDB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A5C021283FF16DF052788A7428BD5E6D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DD6C47008B5DBFA6EDA02A3C5114F030</key>
 		<dict>
 			<key>primary</key>
 			<true/>

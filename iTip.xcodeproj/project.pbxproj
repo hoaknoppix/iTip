@@ -8,8 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1ACA88B5756DC7759BE30C6B /* Pods_iTipTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A74D5FA64E070284974EE1 /* Pods_iTipTests.framework */; };
+		3180BCA36B2D407F133754BB /* Pods_iTipUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656707C7D9A48D561ECEC36B /* Pods_iTipUITests.framework */; };
 		D91CF81AD7D97DCBF262DBAE /* Pods_iTip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E498C714D757E55B7ECAD6C7 /* Pods_iTip.framework */; };
+		FF27C4321CFA8ABA00B8BF41 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8EDC0F1B75D189007CA513 /* Utils.swift */; };
+		FF27C4601CFB5CAA00B8BF41 /* NumberFormatterUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27C45F1CFB5CAA00B8BF41 /* NumberFormatterUtils.swift */; };
+		FF27C4611CFB5D8A00B8BF41 /* NumberFormatterUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27C45F1CFB5CAA00B8BF41 /* NumberFormatterUtils.swift */; };
 		FF371A481CED4A9A0054F2FC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF371A471CED4A9A0054F2FC /* SettingsViewController.swift */; };
+		FF47F4AA1CF8B70E0086BA26 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = FF47F4A91CF8B70E0086BA26 /* tessdata */; };
 		FF8EDB641B75A9D8007CA513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8EDB631B75A9D8007CA513 /* AppDelegate.swift */; };
 		FF8EDB661B75A9D8007CA513 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8EDB651B75A9D8007CA513 /* ViewController.swift */; };
 		FF8EDB691B75A9D8007CA513 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF8EDB671B75A9D8007CA513 /* Main.storyboard */; };
@@ -17,10 +22,22 @@
 		FF8EDB6E1B75A9D8007CA513 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF8EDB6C1B75A9D8007CA513 /* LaunchScreen.xib */; };
 		FF8EDB7A1B75A9D8007CA513 /* iTipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8EDB791B75A9D8007CA513 /* iTipTests.swift */; };
 		FF8EDC101B75D189007CA513 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8EDC0F1B75D189007CA513 /* Utils.swift */; };
+		FFCC9AD11CF9148F00419111 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCC9AD01CF9148F00419111 /* Constants.swift */; };
+		FFCC9AD41CF918ED00419111 /* UIControlFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCC9AD31CF918ED00419111 /* UIControlFactory.swift */; };
+		FFCC9AD61CF9194700419111 /* UIControlConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCC9AD51CF9194700419111 /* UIControlConstants.swift */; };
+		FFCC9AD81CF9432500419111 /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCC9AD71CF9432500419111 /* UIUtils.swift */; };
+		FFCC9B0C1CFA868C00419111 /* iTipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCC9B0B1CFA868C00419111 /* iTipUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		FF8EDB741B75A9D8007CA513 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF8EDB561B75A9D8007CA513 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF8EDB5D1B75A9D8007CA513;
+			remoteInfo = iTip;
+		};
+		FFCC9B0E1CFA868C00419111 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FF8EDB561B75A9D8007CA513 /* Project object */;
 			proxyType = 1;
@@ -33,10 +50,18 @@
 		088AC319E7CEF354A2821980 /* Pods-iTip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTip.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTip/Pods-iTip.release.xcconfig"; sourceTree = "<group>"; };
 		3170228114925AADDF6F0BB9 /* Pods-iTip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTip/Pods-iTip.debug.xcconfig"; sourceTree = "<group>"; };
 		3D4422619289856B4DD47E3F /* Pods-iTipTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTipTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTipTests/Pods-iTipTests.release.xcconfig"; sourceTree = "<group>"; };
+		4FDDB9D7D16B047D79F2E8F2 /* Pods-iTipIntTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTipIntTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTipIntTests/Pods-iTipIntTests.debug.xcconfig"; sourceTree = "<group>"; };
 		53A74D5FA64E070284974EE1 /* Pods_iTipTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTipTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		656707C7D9A48D561ECEC36B /* Pods_iTipUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTipUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9863B60E97C3E4BF4972ED55 /* Pods-iTipUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTipUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTipUITests/Pods-iTipUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D5B818D8496F246C5650FD2A /* Pods-iTipUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTipUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTipUITests/Pods-iTipUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D9D622E6ED0B2E74F099654C /* Pods-iTipTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTipTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTipTests/Pods-iTipTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E498C714D757E55B7ECAD6C7 /* Pods_iTip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA8B4F169B417D5D9D446A50 /* Pods-iTipIntTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTipIntTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTipIntTests/Pods-iTipIntTests.release.xcconfig"; sourceTree = "<group>"; };
+		FA925F9C5BDBB17E1ED98DAC /* Pods_iTipIntTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTipIntTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF27C45F1CFB5CAA00B8BF41 /* NumberFormatterUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumberFormatterUtils.swift; path = Utils/NumberFormatterUtils.swift; sourceTree = "<group>"; };
 		FF371A471CED4A9A0054F2FC /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ViewControllers/SettingsViewController.swift; sourceTree = "<group>"; };
+		FF47F4A91CF8B70E0086BA26 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		FF8EDB5E1B75A9D8007CA513 /* iTip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF8EDB621B75A9D8007CA513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF8EDB631B75A9D8007CA513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +74,13 @@
 		FF8EDB791B75A9D8007CA513 /* iTipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTipTests.swift; sourceTree = "<group>"; };
 		FF8EDC0F1B75D189007CA513 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		FFC330391CF6811F00FE4332 /* iTip-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iTip-Bridging-Header.h"; sourceTree = "<group>"; };
+		FFCC9AD01CF9148F00419111 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Constants/Constants.swift; sourceTree = "<group>"; };
+		FFCC9AD31CF918ED00419111 /* UIControlFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIControlFactory.swift; path = Factories/UIControlFactory.swift; sourceTree = "<group>"; };
+		FFCC9AD51CF9194700419111 /* UIControlConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIControlConstants.swift; path = Factories/UIControlConstants.swift; sourceTree = "<group>"; };
+		FFCC9AD71CF9432500419111 /* UIUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIUtils.swift; path = Utils/UIUtils.swift; sourceTree = "<group>"; };
+		FFCC9B091CFA868C00419111 /* iTipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFCC9B0B1CFA868C00419111 /* iTipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTipUITests.swift; sourceTree = "<group>"; };
+		FFCC9B0D1CFA868C00419111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +100,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FFCC9B061CFA868C00419111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3180BCA36B2D407F133754BB /* Pods_iTipUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +118,10 @@
 				088AC319E7CEF354A2821980 /* Pods-iTip.release.xcconfig */,
 				D9D622E6ED0B2E74F099654C /* Pods-iTipTests.debug.xcconfig */,
 				3D4422619289856B4DD47E3F /* Pods-iTipTests.release.xcconfig */,
+				9863B60E97C3E4BF4972ED55 /* Pods-iTipUITests.debug.xcconfig */,
+				D5B818D8496F246C5650FD2A /* Pods-iTipUITests.release.xcconfig */,
+				4FDDB9D7D16B047D79F2E8F2 /* Pods-iTipIntTests.debug.xcconfig */,
+				EA8B4F169B417D5D9D446A50 /* Pods-iTipIntTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -87,15 +131,30 @@
 			children = (
 				E498C714D757E55B7ECAD6C7 /* Pods_iTip.framework */,
 				53A74D5FA64E070284974EE1 /* Pods_iTipTests.framework */,
+				656707C7D9A48D561ECEC36B /* Pods_iTipUITests.framework */,
+				FA925F9C5BDBB17E1ED98DAC /* Pods_iTipIntTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF27C4311CFA8A1600B8BF41 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FFC330391CF6811F00FE4332 /* iTip-Bridging-Header.h */,
+				FF8EDC0F1B75D189007CA513 /* Utils.swift */,
+				FF27C45F1CFB5CAA00B8BF41 /* NumberFormatterUtils.swift */,
+				FFCC9AD71CF9432500419111 /* UIUtils.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 		FF371A491CED4AA40054F2FC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				FFCC9AD31CF918ED00419111 /* UIControlFactory.swift */,
 				FF8EDB651B75A9D8007CA513 /* ViewController.swift */,
 				FF371A471CED4A9A0054F2FC /* SettingsViewController.swift */,
+				FFCC9AD21CF914B100419111 /* Constants */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -105,6 +164,7 @@
 			children = (
 				FF8EDB601B75A9D8007CA513 /* iTip */,
 				FF8EDB761B75A9D8007CA513 /* iTipTests */,
+				FFCC9B0A1CFA868C00419111 /* iTipUITests */,
 				FF8EDB5F1B75A9D8007CA513 /* Products */,
 				E815D5887D328AF1AED7F7B5 /* Pods */,
 				FA5EC4148A6BB614CBED881B /* Frameworks */,
@@ -116,6 +176,7 @@
 			children = (
 				FF8EDB5E1B75A9D8007CA513 /* iTip.app */,
 				FF8EDB731B75A9D8007CA513 /* iTipTests.xctest */,
+				FFCC9B091CFA868C00419111 /* iTipUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,14 +184,14 @@
 		FF8EDB601B75A9D8007CA513 /* iTip */ = {
 			isa = PBXGroup;
 			children = (
+				FF47F4A91CF8B70E0086BA26 /* tessdata */,
 				FF371A491CED4AA40054F2FC /* ViewControllers */,
 				FF8EDB631B75A9D8007CA513 /* AppDelegate.swift */,
 				FF8EDB671B75A9D8007CA513 /* Main.storyboard */,
 				FF8EDB6A1B75A9D8007CA513 /* Images.xcassets */,
 				FF8EDB6C1B75A9D8007CA513 /* LaunchScreen.xib */,
 				FF8EDB611B75A9D8007CA513 /* Supporting Files */,
-				FF8EDC0F1B75D189007CA513 /* Utils.swift */,
-				FFC330391CF6811F00FE4332 /* iTip-Bridging-Header.h */,
+				FF27C4311CFA8A1600B8BF41 /* Utils */,
 			);
 			path = iTip;
 			sourceTree = "<group>";
@@ -158,6 +219,24 @@
 				FF8EDB781B75A9D8007CA513 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFCC9AD21CF914B100419111 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FFCC9AD01CF9148F00419111 /* Constants.swift */,
+				FFCC9AD51CF9194700419111 /* UIControlConstants.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		FFCC9B0A1CFA868C00419111 /* iTipUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FFCC9B0B1CFA868C00419111 /* iTipUITests.swift */,
+				FFCC9B0D1CFA868C00419111 /* Info.plist */,
+			);
+			path = iTipUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +283,26 @@
 			productReference = FF8EDB731B75A9D8007CA513 /* iTipTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		FFCC9B081CFA868C00419111 /* iTipUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFCC9B101CFA868C00419111 /* Build configuration list for PBXNativeTarget "iTipUITests" */;
+			buildPhases = (
+				6074C1A3A27B221EAAACECFC /* 📦 Check Pods Manifest.lock */,
+				FFCC9B051CFA868C00419111 /* Sources */,
+				FFCC9B061CFA868C00419111 /* Frameworks */,
+				FFCC9B071CFA868C00419111 /* Resources */,
+				1C922C334516C523F520BEBB /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFCC9B0F1CFA868C00419111 /* PBXTargetDependency */,
+			);
+			name = iTipUITests;
+			productName = iTipUITests;
+			productReference = FFCC9B091CFA868C00419111 /* iTipUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -212,7 +311,7 @@
 			attributes = {
 				LastSwiftMigration = 0730;
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = hoaqt;
 				TargetAttributes = {
 					FF8EDB5D1B75A9D8007CA513 = {
@@ -220,6 +319,10 @@
 					};
 					FF8EDB721B75A9D8007CA513 = {
 						CreatedOnToolsVersion = 6.4;
+						TestTargetID = FF8EDB5D1B75A9D8007CA513;
+					};
+					FFCC9B081CFA868C00419111 = {
+						CreatedOnToolsVersion = 7.3.1;
 						TestTargetID = FF8EDB5D1B75A9D8007CA513;
 					};
 				};
@@ -239,6 +342,7 @@
 			targets = (
 				FF8EDB5D1B75A9D8007CA513 /* iTip */,
 				FF8EDB721B75A9D8007CA513 /* iTipTests */,
+				FFCC9B081CFA868C00419111 /* iTipUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -249,12 +353,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF8EDB691B75A9D8007CA513 /* Main.storyboard in Resources */,
+				FF47F4AA1CF8B70E0086BA26 /* tessdata in Resources */,
 				FF8EDB6E1B75A9D8007CA513 /* LaunchScreen.xib in Resources */,
 				FF8EDB6B1B75A9D8007CA513 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		FF8EDB711B75A9D8007CA513 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFCC9B071CFA868C00419111 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -294,6 +406,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iTipTests/Pods-iTipTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		1C922C334516C523F520BEBB /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iTipUITests/Pods-iTipUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2178D9F4649E3274CF0E0A9E /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -310,6 +437,21 @@
 			showEnvVarsInLog = 0;
 		};
 		47AC4657BD5A27AAB140DB04 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6074C1A3A27B221EAAACECFC /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -361,10 +503,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFCC9AD61CF9194700419111 /* UIControlConstants.swift in Sources */,
+				FFCC9AD11CF9148F00419111 /* Constants.swift in Sources */,
 				FF8EDB661B75A9D8007CA513 /* ViewController.swift in Sources */,
+				FFCC9AD41CF918ED00419111 /* UIControlFactory.swift in Sources */,
 				FF8EDC101B75D189007CA513 /* Utils.swift in Sources */,
 				FF8EDB641B75A9D8007CA513 /* AppDelegate.swift in Sources */,
 				FF371A481CED4A9A0054F2FC /* SettingsViewController.swift in Sources */,
+				FF27C4601CFB5CAA00B8BF41 /* NumberFormatterUtils.swift in Sources */,
+				FFCC9AD81CF9432500419111 /* UIUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +519,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF27C4321CFA8ABA00B8BF41 /* Utils.swift in Sources */,
 				FF8EDB7A1B75A9D8007CA513 /* iTipTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFCC9B051CFA868C00419111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF27C4611CFB5D8A00B8BF41 /* NumberFormatterUtils.swift in Sources */,
+				FFCC9B0C1CFA868C00419111 /* iTipUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +540,11 @@
 			isa = PBXTargetDependency;
 			target = FF8EDB5D1B75A9D8007CA513 /* iTip */;
 			targetProxy = FF8EDB741B75A9D8007CA513 /* PBXContainerItemProxy */;
+		};
+		FFCC9B0F1CFA868C00419111 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF8EDB5D1B75A9D8007CA513 /* iTip */;
+			targetProxy = FFCC9B0E1CFA868C00419111 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -426,7 +588,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -471,8 +635,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -496,7 +662,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = iTip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hoa.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "iTip/iTip-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -510,7 +678,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = iTip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hoa.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "iTip/iTip-Bridging-Header.h";
 			};
@@ -531,6 +701,7 @@
 				);
 				INFOPLIST_FILE = iTipTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hoa.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iTip.app/iTip";
 			};
@@ -547,8 +718,40 @@
 				);
 				INFOPLIST_FILE = iTipTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hoa.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iTip.app/iTip";
+			};
+			name = Release;
+		};
+		FFCC9B111CFA868C00419111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9863B60E97C3E4BF4972ED55 /* Pods-iTipUITests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				INFOPLIST_FILE = iTipUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.noron.iTipUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = iTip;
+			};
+			name = Debug;
+		};
+		FFCC9B121CFA868C00419111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5B818D8496F246C5650FD2A /* Pods-iTipUITests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				INFOPLIST_FILE = iTipUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.noron.iTipUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = iTip;
 			};
 			name = Release;
 		};
@@ -578,6 +781,15 @@
 			buildConfigurations = (
 				FF8EDB811B75A9D8007CA513 /* Debug */,
 				FF8EDB821B75A9D8007CA513 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFCC9B101CFA868C00419111 /* Build configuration list for PBXNativeTarget "iTipUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFCC9B111CFA868C00419111 /* Debug */,
+				FFCC9B121CFA868C00419111 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
