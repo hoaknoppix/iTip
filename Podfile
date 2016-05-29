@@ -15,11 +15,6 @@ target 'iTip' do
     # Pods for testing
   end
   
-  target 'iTipIntTests' do
-      inherit! :search_paths
-      # Pods for testing
-  end
-  
   target 'iTipUITests' do
   inherit! :search_paths
   end
