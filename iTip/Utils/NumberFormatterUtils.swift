@@ -13,9 +13,9 @@ class NumberFormatterUtils {
     static let numberFormatter = NSNumberFormatter()
     
     static func initNumberFormatterAsCurrencyStyle() {
-        numberFormatter.locale = NSLocale(localeIdentifier: "en_US")
+        numberFormatter.locale = NSLocale(localeIdentifier: Constants.DEFAULT_LOCALE)
         numberFormatter.numberStyle = NSNumberFormatterStyle.CurrencyStyle
-        numberFormatter.minimumFractionDigits = 2
+        numberFormatter.minimumFractionDigits = Constants.DEFAULT_MINIMUM_FRACTION_DIGITS
     }
     //this method is for formatting double as currency style
     static func getCurrencyStyleStringFromDouble(value: Double) -> String {

@@ -29,23 +29,5 @@ class iTipTests: XCTestCase {
         Utils.saveTipPercentage(tipPercentage)
         XCTAssertEqual(tipPercentage,Utils.retrieveTipPercentage(), "Cannot set and get tip percentage from NSDefault")
     }
- 
-    func testMainViewCalculatingTotalAmount() {
-        if #available(iOS 9.0, *) {
-            let app = XCUIApplication()
-            let orderCost = 10000
-            let textBoxOrderCost = app.textFields["textBoxOrderCost"]
-            textBoxOrderCost.tap()
-            textBoxOrderCost.typeText(String(orderCost))
-            XCTAssertEqual(textBoxOrderCost.label, String(orderCost), "Wrong input for textBoxOrderCost")
-            let stringCurrentTipPercentage = app.staticTexts["labelTipPercentage"].label
-            let currentTipPercentage = Int(stringCurrentTipPercentage.substringToIndex(stringCurrentTipPercentage.characters.endIndex))
-            let totalCost = app.staticTexts["labelTotalCost"].label
-                    XCTAssertEqual(totalCost, String(Utils.getTotalCost(Double(orderCost), tipPercentage: currentTipPercentage!)), "Wrong total cost")
-        } else {
-            // Fallback on earlier versions
-        }
-        
-    }
     
 }

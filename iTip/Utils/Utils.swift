@@ -12,19 +12,18 @@ import TesseractOCR
 class Utils{
     
     struct UtilsConstants {
-        static let _100_PERCENT:Int = 100
-        static let DEFAULT_LOCALE = "en_US"
+
     }
     
     private init() {
-    
+        
     }
     
     static var tipPercentage:Int? = nil
-    static var tesseract:G8Tesseract = G8Tesseract(language: "eng")
+    static var tesseract:G8Tesseract = G8Tesseract(language: Constants.DEFAULT_OCR_LANGUAGE)
     
     static func getOrderCostFromImage(image: UIImage) -> String {
-        tesseract.charWhitelist = "1234567890"
+        tesseract.charWhitelist = Constants.DIGITS
         tesseract.image = image
         tesseract.recognize()
         return tesseract.recognizedText
@@ -35,8 +34,8 @@ class Utils{
     /// param: tipPercentage - the percent of the order cost for tipping
     /// return: the total cost for paying
     static func getTotalCost(orderCost: Double, tipPercentage: Int) -> Double {
-        let totalPercentage = tipPercentage + UtilsConstants._100_PERCENT
-        return orderCost * Double(totalPercentage) / Double(UtilsConstants._100_PERCENT)
+        let totalPercentage = tipPercentage + Constants._100_PERCENT
+        return orderCost * Double(totalPercentage) / Double(Constants._100_PERCENT)
     }
     
     
@@ -47,7 +46,7 @@ class Utils{
             return tipPercentage
         }
         let defaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
-        tipPercentage = defaults.integerForKey("tip_percentage")
+        tipPercentage = defaults.integerForKey(Constants.KEY_TIP_PERCENTAGE)
         return tipPercentage
     }
     
@@ -55,11 +54,11 @@ class Utils{
     // param: tipPercentage the current tip percentage
     static func saveTipPercentage(tipPercentage: Int){
         let defaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
-        defaults.setInteger(tipPercentage, forKey: "tip_percentage")
+        defaults.setInteger(tipPercentage, forKey: Constants.KEY_TIP_PERCENTAGE)
         defaults.synchronize()
         self.tipPercentage = tipPercentage
     }
     
-  
+    
     
 }

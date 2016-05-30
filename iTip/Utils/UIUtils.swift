@@ -14,16 +14,16 @@ class UIUtils {
     }
 
     static func fadeIn(view:UIView) {
-        view.alpha = 0.5
+        view.alpha = Constants.FADE_MIN_VALUE
         UIView.animateWithDuration(UIControlConstants.ANIMATION_DURATION) {
-            view.alpha = 1
+            view.alpha = Constants.FADE_MAX_VALUE
         }
     }
     
     static func fadeOut(view:UIView) {
-        view.alpha = 1
+        view.alpha = Constants.FADE_MAX_VALUE
         UIView.animateWithDuration(UIControlConstants.ANIMATION_DURATION) {
-            view.alpha = 0.5
+            view.alpha = Constants.FADE_MIN_VALUE
         }
     }
 }

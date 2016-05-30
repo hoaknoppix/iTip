@@ -10,7 +10,6 @@
 		1ACA88B5756DC7759BE30C6B /* Pods_iTipTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A74D5FA64E070284974EE1 /* Pods_iTipTests.framework */; };
 		3180BCA36B2D407F133754BB /* Pods_iTipUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656707C7D9A48D561ECEC36B /* Pods_iTipUITests.framework */; };
 		D91CF81AD7D97DCBF262DBAE /* Pods_iTip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E498C714D757E55B7ECAD6C7 /* Pods_iTip.framework */; };
-		FF27C4321CFA8ABA00B8BF41 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8EDC0F1B75D189007CA513 /* Utils.swift */; };
 		FF27C4601CFB5CAA00B8BF41 /* NumberFormatterUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27C45F1CFB5CAA00B8BF41 /* NumberFormatterUtils.swift */; };
 		FF27C4611CFB5D8A00B8BF41 /* NumberFormatterUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27C45F1CFB5CAA00B8BF41 /* NumberFormatterUtils.swift */; };
 		FF371A481CED4A9A0054F2FC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF371A471CED4A9A0054F2FC /* SettingsViewController.swift */; };
@@ -21,12 +20,15 @@
 		FF8EDB6B1B75A9D8007CA513 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF8EDB6A1B75A9D8007CA513 /* Images.xcassets */; };
 		FF8EDB6E1B75A9D8007CA513 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF8EDB6C1B75A9D8007CA513 /* LaunchScreen.xib */; };
 		FF8EDB7A1B75A9D8007CA513 /* iTipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8EDB791B75A9D8007CA513 /* iTipTests.swift */; };
-		FF8EDC101B75D189007CA513 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8EDC0F1B75D189007CA513 /* Utils.swift */; };
 		FFCC9AD11CF9148F00419111 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCC9AD01CF9148F00419111 /* Constants.swift */; };
 		FFCC9AD41CF918ED00419111 /* UIControlFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCC9AD31CF918ED00419111 /* UIControlFactory.swift */; };
 		FFCC9AD61CF9194700419111 /* UIControlConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCC9AD51CF9194700419111 /* UIControlConstants.swift */; };
 		FFCC9AD81CF9432500419111 /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCC9AD71CF9432500419111 /* UIUtils.swift */; };
 		FFCC9B0C1CFA868C00419111 /* iTipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCC9B0B1CFA868C00419111 /* iTipUITests.swift */; };
+		FFF35B851CFCA796002264CD /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF35B841CFCA796002264CD /* Utils.swift */; };
+		FFF35B861CFCA9AE002264CD /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF35B841CFCA796002264CD /* Utils.swift */; };
+		FFF35B871CFCA9EB002264CD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCC9AD01CF9148F00419111 /* Constants.swift */; };
+		FFF35B881CFCA9F3002264CD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCC9AD01CF9148F00419111 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +74,6 @@
 		FF8EDB731B75A9D8007CA513 /* iTipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF8EDB781B75A9D8007CA513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF8EDB791B75A9D8007CA513 /* iTipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTipTests.swift; sourceTree = "<group>"; };
-		FF8EDC0F1B75D189007CA513 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		FFC330391CF6811F00FE4332 /* iTip-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iTip-Bridging-Header.h"; sourceTree = "<group>"; };
 		FFCC9AD01CF9148F00419111 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Constants/Constants.swift; sourceTree = "<group>"; };
 		FFCC9AD31CF918ED00419111 /* UIControlFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIControlFactory.swift; path = Factories/UIControlFactory.swift; sourceTree = "<group>"; };
@@ -81,6 +82,7 @@
 		FFCC9B091CFA868C00419111 /* iTipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFCC9B0B1CFA868C00419111 /* iTipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTipUITests.swift; sourceTree = "<group>"; };
 		FFCC9B0D1CFA868C00419111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFF35B841CFCA796002264CD /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Utils/Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,9 +143,9 @@
 			isa = PBXGroup;
 			children = (
 				FFC330391CF6811F00FE4332 /* iTip-Bridging-Header.h */,
-				FF8EDC0F1B75D189007CA513 /* Utils.swift */,
 				FF27C45F1CFB5CAA00B8BF41 /* NumberFormatterUtils.swift */,
 				FFCC9AD71CF9432500419111 /* UIUtils.swift */,
+				FFF35B841CFCA796002264CD /* Utils.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -505,9 +507,9 @@
 			files = (
 				FFCC9AD61CF9194700419111 /* UIControlConstants.swift in Sources */,
 				FFCC9AD11CF9148F00419111 /* Constants.swift in Sources */,
+				FFF35B851CFCA796002264CD /* Utils.swift in Sources */,
 				FF8EDB661B75A9D8007CA513 /* ViewController.swift in Sources */,
 				FFCC9AD41CF918ED00419111 /* UIControlFactory.swift in Sources */,
-				FF8EDC101B75D189007CA513 /* Utils.swift in Sources */,
 				FF8EDB641B75A9D8007CA513 /* AppDelegate.swift in Sources */,
 				FF371A481CED4A9A0054F2FC /* SettingsViewController.swift in Sources */,
 				FF27C4601CFB5CAA00B8BF41 /* NumberFormatterUtils.swift in Sources */,
@@ -519,7 +521,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF27C4321CFA8ABA00B8BF41 /* Utils.swift in Sources */,
+				FFF35B881CFCA9F3002264CD /* Constants.swift in Sources */,
+				FFF35B861CFCA9AE002264CD /* Utils.swift in Sources */,
 				FF8EDB7A1B75A9D8007CA513 /* iTipTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,6 +531,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFF35B871CFCA9EB002264CD /* Constants.swift in Sources */,
 				FF27C4611CFB5D8A00B8BF41 /* NumberFormatterUtils.swift in Sources */,
 				FFCC9B0C1CFA868C00419111 /* iTipUITests.swift in Sources */,
 			);
