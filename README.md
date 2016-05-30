@@ -17,9 +17,7 @@ Additional features:
 
 [] Using camera for inputting bill amount by using tesseract OCR (See the video, it works really bad in the real situation but at least, it works! :))
 
-<video width="800" height="600" controls>
-  <source src="ipad_ocr_iTip.mp4" type="video/mp4">
-</video>
+[Demo](https://www.youtube.com/watch?v=Va2GwulSCkU)
 
 [] Unit Test and UI Test: Some demo test cases for the app.
 
