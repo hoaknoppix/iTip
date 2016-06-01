@@ -7,6 +7,7 @@ target 'iTip' do
   pod "CircleSlider"
   pod 'TesseractOCRiOS', '4.0.0'
   pod 'Toast-Swift', '~> 1.3.0'
+  pod 'ALCameraViewController'
 
   # Pods for iTip
 

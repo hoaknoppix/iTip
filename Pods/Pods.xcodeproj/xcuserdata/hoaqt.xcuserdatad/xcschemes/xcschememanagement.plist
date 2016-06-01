@@ -4,17 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ALCameraViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>CircleSlider.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-iTip.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-iTipIntTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,17 +42,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>35076095AD811AF007230C15D0CFA879</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>3963976E5E45D67FFA28A9409477E034</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>541B3000ED7BD614E803C7656483C825</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,12 +57,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A5C021283FF16DF052788A7428BD5E6D</key>
+		<key>B14F7BFF6F07B85E6048DC7073A6B7CD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DD6C47008B5DBFA6EDA02A3C5114F030</key>
+		<key>D13494135B7524E070075338AD06F273</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DAEFE5845A9A47287B43BE713DFD4B08</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EB6F447A5D5F30DAF8593B5078DBD25B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

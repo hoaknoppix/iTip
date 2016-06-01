@@ -9,6 +9,7 @@
 import UIKit
 import TesseractOCR
 import Toast_Swift
+import ALCameraViewController
 
 class ViewController: UIViewController {
 
@@ -18,14 +19,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelTipPercentage: UILabel!
     
     var tipPercentage:Int = Constants.DEFAULT_TIP_PERCENTAGE
-    let imagePicker: UIImagePickerController! = UIImagePickerController()
-    
+    let croppingEnabled = true
+
     override func viewDidLoad() {
         super.viewDidLoad()
         //automatically show the keypad
         textBoxOrderCost.becomeFirstResponder()
-        imagePicker.delegate = self
-
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -58,21 +57,17 @@ extension ViewController {
             self.view.makeToast(Constants.STRING_CAMERA_NOT_EXIST)
             return
         }
-        imagePicker.allowsEditing = false
-        imagePicker.sourceType = .Camera
-        imagePicker.cameraCaptureMode = .Photo
-        imagePicker.modalTransitionStyle = .FlipHorizontal
-        presentViewController(imagePicker, animated: true, completion: nil)
-    }
-}
-
-//OCR - It works really bad
-extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        if let pickedImage:UIImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            textBoxOrderCost.text = Utils.getOrderCostFromImage(pickedImage)
-            dismissViewControllerAnimated(true, completion: nil)
+        let cameraViewController = CameraViewController(croppingEnabled: croppingEnabled) { image, asset in
+            if let pickedImage: UIImage = image! {
+                self.textBoxOrderCost.text = Utils.getOrderCostFromImage(pickedImage)
+            }
+            self.dismissViewControllerAnimated(true, completion: nil)
         }
+        
+        cameraViewController.modalTransitionStyle = .FlipHorizontal
+        cameraViewController.supportedInterfaceOrientations()
+        
+        presentViewController(cameraViewController, animated: true, completion: nil)
     }
 }
 

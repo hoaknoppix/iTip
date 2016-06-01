@@ -24,7 +24,7 @@ class Constants {
     
     static let DEFAULT_OCR_LANGUAGE = "eng"
     
-    static let DEFAULT_LOCALE = "en_US"
+    static let DEFAULT_LOCALE = NSLocale.preferredLanguages()[0]
     
     static let DIGITS = "1234567890"
     

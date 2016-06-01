@@ -64,6 +64,7 @@
 		FF27C45F1CFB5CAA00B8BF41 /* NumberFormatterUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumberFormatterUtils.swift; path = Utils/NumberFormatterUtils.swift; sourceTree = "<group>"; };
 		FF371A471CED4A9A0054F2FC /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ViewControllers/SettingsViewController.swift; sourceTree = "<group>"; };
 		FF47F4A91CF8B70E0086BA26 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		FF751D3A1CFF5260008C6DCA /* ALCameraViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ALCameraViewController.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/iTip-gfvhbhmvnpdpwqfgtbzysicemxxp/Build/Products/Debug-iphonesimulator/ALCameraViewController/ALCameraViewController.framework"; sourceTree = "<group>"; };
 		FF8EDB5E1B75A9D8007CA513 /* iTip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF8EDB621B75A9D8007CA513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF8EDB631B75A9D8007CA513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +132,7 @@
 		FA5EC4148A6BB614CBED881B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FF751D3A1CFF5260008C6DCA /* ALCameraViewController.framework */,
 				E498C714D757E55B7ECAD6C7 /* Pods_iTip.framework */,
 				53A74D5FA64E070284974EE1 /* Pods_iTipTests.framework */,
 				656707C7D9A48D561ECEC36B /* Pods_iTipUITests.framework */,
